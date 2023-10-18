@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
+    <div class="container text-center">
+        <div class="row">
+        <div class="col">
     <form>
         <div class="mb-3">
             <label for="location" id="location-label" class="form-label">Where you at?</label>
@@ -14,6 +17,25 @@
         </div>
         <button type="submit" class="btn btn-primary" id="submit-button">Tell me if it's raining</button>
     </form>
+    </div>
+    <div class="col">
+        <dl class="row">
+            <dt class="col-sm-3">Location</dt>
+            <dd class="col-sm-9" id="location-display"></dd>
+
+            <dt class="col-sm-3">Condition</dt>
+            <dd class="col-sm-9" id="condition"></dd>
+
+            <dt class="col-sm-3">Temperature(C)</dt>
+            <dd class="col-sm-9" id="temp_c"></dd>
+
+            <dt class="col-sm-3">Temperature(F)</dt>
+            <dd class="col-sm-9" id="temp_f"></dd>
+
+        </dl>
+    </div>
+    </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
